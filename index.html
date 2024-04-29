@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Eyewear Store</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">  
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Eyewear</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#product">product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="toggleLogin()">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <h1 class="display-4">Discover Your Style</h1>
+                <p class="lead">Explore the Latest Trends in Eyewear</p>
+            </div>
+        </div>
+    </header>
+    <!-- Login Section -->
+    <section id="login" class="text-center">
+        <div class="container">
+            <h2 class="section-title">Login</h2>
+            <p class="section-description">Already have an account? Log in to explore exclusive offers.</p>
+            <form id="loginForm">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block" onclick="validateLogin()">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+     <!-- Main Content Section -->
+    <main id=product>
+       
+   
+    <section class="products" id="product1">
+        <h2>Eyeswear Products</h2>
+        <p></p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct.html'">
+                <img src="1.1.jpg" alt="">
+                <div class="des">
+                    <span>Vincent chase online</span>
+                    <h5>Blue Full Chase Wayfarer</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1499</h4>
+                </div>
+                <button class="btn btn-primary" onclick="buyNow('Stylish Sneakers', 49.99)">Add to cart</button>
+            </div>
+
+            <div class="pro">
+                <img src="2.1.jpg" alt="">
+                <div class="des">
+                    <span>eyeswears AIR</span>
+                    <h5>BLUE FULL RIM ROUND</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1548</h4>
+                </div>
+                <button class="btn btn-primary" onclick="buyNow('Stylish Sneakers', 49.99)">Add to cart</button>
+            </div>
+
+            <div class="pro">
+                <img src="3.1.jpg" alt="">
+                <div class="des">
+                    <span>Eyewear AIR</span>
+                    <h5>BLUE TRANSPARENT FULL RIM ROUND</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1349</h4>
+                </div>
+                <button class="btn btn-primary" onclick="buyNow('Stylish Sneakers', 49.99)">Add to cart</button>
+            </div>
+
+            <div class="pro">
+                <img src="4.1.jpg" alt="">
+                <div class="des">
+                    <span>Eyewear HUSTLR</span>
+                    <h5>OCEAN BLUE FULL RIM WAYFARER</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1339</h4>
+                </div>
+                <button class="btn btn-primary" onclick="buyNow('Stylish Sneakers', 49.99)">Add to cart</button>
+            </div>
+
+        </div>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="9.1.jpg" alt="">
+                <div class="des">
+                    <span>John Jacobs</span>
+                    <h5>Gunmental Full Rim Hexagonal</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1209</h4>
+                </div>
+                <button class="btn btn-primary" onclick="buyNow('Stylish Sneakers', 49.99)">Add to cart</button>
+            </div>
+
+            <div class="pro">
+                <img src="10.1.jpg" alt="">
+                <div class="des">
+                    <span>John Jacobs</span>
+                    <h5>silver Full Rim square</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1369</h4>
+                </div>
+                <button class="btn btn-primary" onclick="buyNow('Stylish Sneakers', 49.99)">Add to cart</button>
+            </div>
+
+            <div class="pro">
+                <img src="11.1.jpg" alt="">
+                <div class="des">
+                    <span>Vincent Chase Polarized </span>
+                    <h5>Matte Blue Full Rim Wayfarer</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1229</h4>
+                </div>
+                <button class="btn btn-primary" onclick="buyNow('Stylish Sneakers', 49.99)">Add to cart</button>
+            </div>
+
+            <div class="pro">
+                <img src="12.1.jpg" alt="">
+                <div class="des">
+                    <span>John Jacobs</span>
+                    <h5>Gunmental Full Rim Aviator</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1279</h4>
+                </div>
+                <button class="btn btn-primary" onclick="buyNow('Stylish Sneakers', 49.99)">Add to cart</button>
+            </div>
+    </section>
+    </main>
+    <!-- About Section -->
+    <section id="about" class="text-center bg-light">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <p class="section-description">Welcome to Your Eyewear, your premier destination for the latest trends in eyewear. We offer a curated collection of stylish sunglasses and trendy reading glasses to elevate your look and enhance your vision.</p>
+                    <p>As a proud member of the Eyewear family, we bring decades of expertise and a commitment to quality. Our mission is to provide you with eyewear that not only meets your visual needs but also complements your unique style.</p>
+                    <p>Explore our carefully selected products and discover eyewear that reflects your personality. Your journey to finding the perfect pair starts here at Your Eyewear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+        </div>
+    </section>
+ 
+    <footer id="footerMobile" class="footer-nav-mobile">
+        <div class="container">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-home fa-lg"></i> Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart fa-lg"></i> Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin_product.html"><i class="fas fa-cogs fa-lg"></i> Admin</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="toggleLogin()"><i class="fas fa-user fa-lg"></i>Login</a>
+              <!-- <a class="nav-link" href="login.html"><i class="fas fa-user fa-lg"></i> Login</a> -->
+            </li>
+    
+          </ul>
+        </div>
+      </footer> 
+      <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+          <p>&copy; 2024 Magnet. All rights reserved.</p>
+        </div>
+      </footer>
+    
+   
+    <!-- Include Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

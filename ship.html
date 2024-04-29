@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Address & Billing Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">  
+
+    <style>
+        /* styles.css */
+
+/* Body Styles */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Padding to accommodate the fixed navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Container Styles */
+.containers {
+    margin: 20px;
+    margin-top: 20px; /* Space below the fixed navbar */
+}
+
+/* Form Styles */
+.form-container {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Form Input Styles */
+.form-group {
+    margin-bottom: 20px; /* Space between form inputs */
+}
+
+/* Button Styles (uncomment if you want to use the submit button) */
+/* .btn-primary {
+    width: 100%;
+} */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .containers {
+        margin: 20px;
+        margin-top: 50px; /* Adjusted margin for smaller screens */
+    }
+    .cart-summary {
+        margin-bottom: 30px; /* Space between sections on smaller screens */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Eyewear</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+
+    <div class="containers">
+        <!-- <h1 class="text-center mb-5">Shipping Address & Billing Information</h1> -->
+
+        <div class="row">
+            <!-- Shipping Address -->
+            <div class="cart-summary col-md-6 order-first">
+                <h2>Shipping Address</h2>
+                <div class="form-container">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">Pincode:</label>
+                            <input type="text" id="zipcode" name="zipcode" class="form-control">
+                        </div>
+                            </form>
+                            <a href="payment.html">
+                                <button class="btn btn-primary">process to pay</button></a>
+    
+                </div>
+            </div>
+            </div>
+            </div>
+            <footer id="footerMobile" class="footer-nav-mobile">
+                <div class="container">
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html"><i class="fas fa-home fa-lg"></i> Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart fa-lg"></i> Cart</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="admin_product.html"><i class="fas fa-cogs fa-lg"></i> Admin</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleLogin()"><i class="fas fa-user fa-lg"></i>Login</a>
+                      <!-- <a class="nav-link" href="login.html"><i class="fas fa-user fa-lg"></i> Login</a> -->
+                    </li>
+            
+                  </ul>
+                </div>
+              </footer> 
+        
+            <!-- Billing Information -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
